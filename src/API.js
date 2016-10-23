@@ -1,11 +1,11 @@
 import axios from 'axios';
-import ServerAction from './actions/ServerActions';
+import ServerActions from './actions/ServerActions';
 
 const API = {
-  getCompany(name) {
-    axios.get(`/company/${name}`)
+  getSearch(name) {
+    axios.get(`/api/reviews/{name}`)
       .then(res => {
-        console.log('res.data', res.data);
+        ServerActions.receiveSearch(res.data.response);
       })
       // .then(data => {
       //   ServerAction.getCompany(name);
@@ -14,6 +14,8 @@ const API = {
         console.log('err:', err)
       })
   },
+
+
 } //end object
 
 export default API;

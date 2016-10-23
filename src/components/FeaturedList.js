@@ -35,6 +35,7 @@ export default class FeaturedList extends Component {
 
   render() {
     let { companies } = this.state;
+    console.log('companies: ', companies);
     // let  Companies = companies.map( company => {
     //     let { name, id, logo, review, score, description } = company;
         let Companies = (

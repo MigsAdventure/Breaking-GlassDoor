@@ -8,7 +8,7 @@ export default class SearchBar extends Component {
       e.preventDefault()
       let {input} = this.refs
       let name = input.value
-      Actions.getCompany(name);
+      Actions.getSearch(name);
     }
 
   render () {

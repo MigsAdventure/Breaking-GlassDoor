@@ -2,10 +2,10 @@
 import AppDispatcher from '../AppDispatcher'
 
 const ServerActions = {
-  gotData(data) {
+  receiveSearch(results) {
     AppDispatcher.dispatch({
-      type: 'GOT_DATA',
-      payload: data
+      type: 'GET_SEARCH_RESULTS',
+      payload: results
     })
   }
 

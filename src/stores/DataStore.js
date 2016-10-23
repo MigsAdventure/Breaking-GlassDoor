@@ -11,7 +11,7 @@ class DataStore extends EventEmitter {
       let { type, payload } = action;
       switch (type) {
         case 'GET_SEARCH_RESULTS':
-          _companies = payload.searchResults;
+          _companies = payload;
           this.emit('CHANGE');
           break;
 
@@ -38,7 +38,7 @@ class DataStore extends EventEmitter {
   getScores() {
     return _scores;
   }
-  
+
 }
 
 export default new DataStore()

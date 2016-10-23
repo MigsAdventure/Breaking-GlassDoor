@@ -30,6 +30,7 @@
     "react-dom": "^15.3.0",
     "react-router": "^2.6.1",
     "react-tap-event-plugin": "^1.0.0",
+    "request": "^2.75.0",
     "semantic-ui-react": "^0.55.1",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.3",
