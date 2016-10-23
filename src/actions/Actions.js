@@ -6,6 +6,10 @@ const Actions = {
      API.getSearch(name);
    },
 
+   setScores(company) {
+     API.setScores(company);
+   },
+
 }
 
 export default Actions

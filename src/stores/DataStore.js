@@ -11,7 +11,7 @@ class DataStore extends EventEmitter {
       let { type, payload } = action;
       switch (type) {
         case 'GET_SEARCH_RESULTS':
-          _companies = payload;
+          _companies = payload.employers;
           this.emit('CHANGE');
           break;
 
