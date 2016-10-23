@@ -1,0 +1,43 @@
+.img{
+  max-width: 290px;
+  max-height: 170px;
+}
+.card{
+  text-align: center;
+}
+.content{
+  margin-top: 30px;
+}
+/*body{
+  background-image: url("./background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+.delete{
+  margin-left: 10px;
+}
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #3e98c7;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #3e98c7;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+.featured-progressbar{
+  max-width: 50px;
+  max-height: 50px;
+  
+  /*position: absolute;
+  margin-right: 0px;*/
+}

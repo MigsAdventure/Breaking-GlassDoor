@@ -1,0 +1,106 @@
+body {
+  background-color: #ffd0ff;
+  background-size:cover;
+  background-position: center;
+}
+
+.img{
+  max-width: 290px;
+  max-height: 170px;
+}
+.card{
+  text-align: center;
+}
+
+a.ui.card:hover {
+  box-shadow: 0 0 15px black;
+  transform:scale(1.3em);
+}
+
+.card {
+animation: fade 7s 1;
+}
+
+@keyframes fade {
+  0% {
+  opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 1em;
+  }
+}
+
+
+.content{
+  margin-top: 30px;
+}
+
+.delete{
+  margin-left: 10px;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #3e98c7;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #3e98c7;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+.featured-progressbar{
+  max-width: 50px;
+  max-height: 50px;
+  display: inline;
+
+}
+
+.featured-progressbar {
+  display: inline;
+}
+
+div.featured > svg.CircularProgressbar {
+  height:3em;
+}
+
+.ui.mini.statistic {
+  vertical-align: top;
+  margin-right: 1em;
+}
+
+.header {
+  font-size:1.7em;
+  margin:1em;
+}
+
+input.searchBar {
+  line-height: 1.3em;
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  border-radius: 1em;
+}
+
+a.ui.card {
+  margin:1em;
+}
+
+.progBar.progress {
+  margin: -1em 0;
+}
+
+ui.progress:last-child  {
+  margin: 0 0 1.5em;
+}
+
+.ui.card:first-child {
+    margin-top: 1em;
+}
