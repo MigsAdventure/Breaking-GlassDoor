@@ -30,7 +30,7 @@ export default class resultsTable extends Component {
 
   select(company) {
       Actions.setScores(company);
-      browserHistory.push(`/detail/:${company.id}`);
+      browserHistory.push(`/detail`);
   }
 
 

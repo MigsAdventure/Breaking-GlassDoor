@@ -15,7 +15,7 @@ export default class Layout extends Component {
             <img src='//dl2.pushbulletusercontent.com/9HE8l6ZBwCBtRJhdu8FEIB7EXIlduZVO/logo2.png'/>
           </Menu.Item>
           <Menu.Item>
-            <h1>Breaking the Glassdoor</h1>
+            <h1>Shatter</h1>
           </Menu.Item>
           <Menu.Item className={classNames({active: path === '/'})}><Link to="/">Home</Link></Menu.Item>
           <Menu.Item className={classNames({active: path === '/detail'})}><Link to="/detail">Detail</Link></Menu.Item>
