@@ -79,7 +79,6 @@ app.get('/company/sup-score/:id', score_controller.get_support_score);
 app.get('/company/safe-score/:id', score_controller.get_safety_score);
 
 
-
 app.get('*', (req, res) => {
   let indexPath = path.join(__dirname, './public/index.html');
   res.sendFile(indexPath);
