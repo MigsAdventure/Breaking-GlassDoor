@@ -1,5 +1,5 @@
-import axios from 'axios'
-import ServerAction from './actions/ServerActions'
+import axios from 'axios';
+import ServerAction from './actions/ServerActions';
 
 const API = {
   getCompany(name) {
@@ -14,9 +14,6 @@ const API = {
         console.log('err:', err)
       })
   },
-
-
-
-}; //end object
+} //end object
 
 export default API;

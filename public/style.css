@@ -14,20 +14,30 @@ body {
 
 a.ui.card:hover {
   box-shadow: 0 0 15px black;
-  transform:scale(1.3em);
+  transform:scale(1.05);
 }
 
 .card {
-animation: fade 7s 1;
+animation: fade 5s 1;
 }
 
 @keyframes fade {
   0% {
+  transform: scaleZ(0.5);
   opacity: 0;
+  /*transform: rotate(-360deg);*/
   }
+
+  20% {
+      /*transform: rotate(0);*/
+  }
+
   100% {
     opacity: 1;
+    transform: scaleZ(1);
+
     margin-top: 1em;
+
   }
 }
 

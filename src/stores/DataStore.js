@@ -1,7 +1,8 @@
 import { EventEmitter } from 'events';
 import AppDispatcher from '../AppDispatcher';
 
-let _results = [];
+let _companies = [];
+let _scores = [];
 
 class DataStore extends EventEmitter {
   constructor () {
@@ -10,9 +11,14 @@ class DataStore extends EventEmitter {
       let { type, payload } = action;
       switch (type) {
         case 'GET_SEARCH_RESULTS':
-        _results = payload.searchResults;
-        this.emit('CHANGE')
-        break;
+          _companies = payload.searchResults;
+          this.emit('CHANGE');
+          break;
+
+        case 'GET_SCORES':
+          _scores = payload.scores;
+          this.emit('CHANGE');
+          break;
       }
     })
   }
@@ -25,9 +31,14 @@ class DataStore extends EventEmitter {
     this.removeListener('CHANGE', cb)
   }
 
-  getResults(){
-    return _results;
+  getCompanies(){
+    return _companies;
   }
+
+  getScores() {
+    return _scores;
+  }
+  
 }
 
 export default new DataStore()

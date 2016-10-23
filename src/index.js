@@ -9,7 +9,7 @@ render(
   <Router history={browserHistory}>
     <Route path="/" component={Layout}>
       <IndexRoute component={FeaturedList} />
-      <Route path="/detail" component={DetailedPage} />
+      <Route path="/detail/:id" component={DetailedPage} />
     </Route>
   </Router>,
   document.getElementById('root')

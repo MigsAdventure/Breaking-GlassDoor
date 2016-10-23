@@ -9,10 +9,11 @@ import Actions from '../actions/Actions'
 export default class FeaturedList extends Component {
   constructor() {
     super();
-    // this.state={
-    //   data: DataStore.getData()
-    // }
+    this.state={
+      companies: DataStore.getCompanies(),
+    }
     this._onChange = this._onChange.bind(this);
+    this.select = this.select.bind(this);
   }
 
   componentWillMount () {
@@ -24,12 +25,16 @@ export default class FeaturedList extends Component {
   }
 
   _onChange() {
-    // this.setState({ animals: ClientsDataStore.getAnimals() });
+    this.setState({ companies: DataStore.getCompanies() });
+  }
+
+  select(id) {
+      browserHistory.push(`/detail/${id}`);
   }
 
 
   render() {
-    // let { data } = this.state;
+    let { companies } = this.state;
     // let  Companies = companies.map( company => {
     //     let { name, id, logo, review, score, description } = company;
         let Companies = (
@@ -44,7 +49,7 @@ export default class FeaturedList extends Component {
                   </Card.Header>
                 </div>
                 <Card.Meta>
-                  Description: From next-generation networks to industry-leading mobility, cloud, and video, Cisco provides integrated architecture and software solutions, connecting people, processes, data, and things.
+                  Description: From next-generation networks to industry-leading mobility, cloud, and video, Cisco provides integrated architecture and software solutions, connecting people, processes, companies, and things.
                 </Card.Meta>
                 <Card.Description>
                   Reviews : "Great place to work!"
